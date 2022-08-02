@@ -1,9 +1,18 @@
-$color-white: #fff !default;
-$color-black: #000 !default;
+$color-white: #FFFFFF;
+$color-black: #202429;
+
+$color-blue: #01519D;
+$color-light-blue: #00BCFF;
+$color-light: #F4F5F8;
+$color-grey: #8C9198;
 
 // Color system:
 // 'colorName': 'color'
 $colors: (
   "white": $color-white,
   "black": $color-black,
+  "blue": $color-blue,
+  "light-blue": $color-light-blue,
+  "light": $color-light,
+  "grey": $color-grey,
 );

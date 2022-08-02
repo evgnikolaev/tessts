@@ -74,10 +74,9 @@ dl {
   margin-bottom: 1rem;
 }
 
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+ul,ol{
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 0;
 }
 
