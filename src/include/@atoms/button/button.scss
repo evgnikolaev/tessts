@@ -1,0 +1,87 @@
+.button {
+  $root: &;
+
+  font-family: $ff-base;
+  font-size: 0;
+  display: inline-block;
+  padding: rem(18) rem(32);
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $color-blue;
+  min-width: rem(120);
+  cursor: pointer;
+
+  @include media-breakpoint-up(lg) {
+    @include defaultTransition(background-color, color);
+
+    &:hover {
+      background-color: $color-blue;
+      color: #fff;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    pointer-events: none;
+    color: $color-grey;
+    border-color: $color-grey;
+  }
+
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: rem(15);
+    line-height: rem(25);
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: rem(0);
+    line-height: rem(25);
+    width: rem(24);
+    height: rem(24);
+    margin-left: rem(24);
+    color: $color-blue;
+
+    @include media-breakpoint-up(lg) {
+      @include defaultTransition(color);
+      #{$root}:hover & {
+        color: $color-white;
+      }
+    }
+
+    #{$root}--light & {
+      color: $color-white;
+    }
+
+    #{$root}:disabled &,
+    #{$root}--disabled & {
+      color: $color-grey;
+    }
+
+    #{$root}:disabled#{$root}--light &,
+    #{$root}--disabled#{$root}--light & {
+      color: rgba($color-white, 0.5);
+    }
+  }
+
+
+  &--light {
+    color: $color-white;
+    border-color: $color-light-blue;
+
+    @include media-breakpoint-up(lg) {
+      &:hover {
+        background-color: $color-light-blue;
+      }
+    }
+  }
+
+  &:disabled#{$root}--light,
+  &--disabled#{$root}--light {
+    color: rgba($color-white, 0.5);
+    border-color: rgba($color-white, 0.5);
+  }
+}
