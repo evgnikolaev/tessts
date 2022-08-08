@@ -1,0 +1,169 @@
+.checkbox {
+  $root: &;
+
+  position: relative;
+  display: inline-block;
+  min-height: rem(24);
+  min-width: rem(24);
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: rem(24);
+    width: rem(24);
+    background-color: transparent;
+    border: 2px solid $color-black;
+    @include defaultTransition(border);
+
+    &:after {
+      position: absolute;
+      content: "";
+      opacity: 0;
+      @include defaultTransition(opacity);
+    }
+
+    #{$root}:hover & {
+      border-color: $color-blue;
+    }
+
+    #{$root}--light:hover & {
+      border-color: $color-white;
+    }
+
+    #{$root}--radio & {
+      width: rem(20);
+      height: rem(20);
+      border-radius: 50%;
+      margin-top: rem(2);
+      margin-left: 2px;
+
+      &:after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(10);
+        height: rem(10);
+        border-radius: 50%;
+        background-color: $color-blue;
+      }
+    }
+
+    #{$root}:not(#{$root}--radio) & {
+      &:after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(13);
+        height: rem(10);
+        background-image: $icon-check;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    #{$root}__input:checked ~ & {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    #{$root}:not(#{$root}--radio) #{$root}__input:disabled ~ & {
+      border-color: rgba($color-grey, 0.5);
+
+      &:after {
+        background-image: $icon-check-disabled;
+      }
+    }
+
+    #{$root}--radio #{$root}__input:disabled ~ & {
+      border-color: rgba($color-grey, 0.5);
+
+      &:after {
+        background-color: rgba($color-grey, 0.5);
+      }
+    }
+
+
+    #{$root}--light & {
+      border-color: $color-light-blue;
+    }
+
+    #{$root}--light#{$root}:not(#{$root}--radio) & {
+      &:after {
+        background-image: $icon-check-white;
+      }
+    }
+
+    #{$root}--light#{$root}--radio & {
+      &:after {
+        background-color: $color-white;
+      }
+    }
+
+    #{$root}--light#{$root}:not(#{$root}--radio) #{$root}__input:disabled ~ & {
+      border-color: rgba($color-white, 0.5);
+
+      &:after {
+        background-image: $icon-check-white-disabled;
+      }
+    }
+
+    #{$root}--light#{$root}--radio #{$root}__input:disabled ~ & {
+      border-color: rgba($color-white, 0.5);
+
+      &:after {
+        background-color: rgba($color-white, 0.5);
+      }
+    }
+
+  }
+
+
+  &__text {
+    display: block;
+    padding-left: rem(40);
+    color: $color-black;
+    @include text-default;
+
+    a {
+      color: currentColor;
+
+      @include media-breakpoint-up(lg) {
+        @include line-animate-in($color-dark-grey);
+      }
+    }
+
+    #{$root}__input:disabled ~ & {
+      color: rgba($color-grey, 0.5);
+    }
+
+    #{$root}--light & {
+      color: $color-white;
+
+      a {
+        @include media-breakpoint-up(lg) {
+          @include line-animate-in($color-white);
+        }
+      }
+    }
+
+    #{$root}__input:disabled ~ & {
+      color: rgba($color-grey, 0.5);
+    }
+
+    #{$root}--light #{$root}__input:disabled ~ & {
+      color: rgba($color-white, 0.5);
+    }
+
+  }
+
+}

@@ -1,0 +1,12 @@
+<input
+        type="{{ field.type?: 'text' }}"
+        class="input {% if field.theme %}input--{{ field.theme }}{% endif %}"
+        {% if  field.id %}id="{{ field.id }}" {% endif %}
+        {% if  field.name %}name="{{ field.name }}" {% endif %}
+        {% if  field.placeholder %}placeholder="{{ field.placeholder }}" {% endif %}
+        {% if  field.required %} required {% endif %}
+        {% if field.disabled %} disabled{% endif %}
+        {% if field.readonly %} readonly{% endif %}
+       {% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}
+
+>

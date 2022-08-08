@@ -1,3 +1,41 @@
 $timing: 0.3s !default;
 $easing: ease !default;
 
+@mixin line-animate-in($color: currentColor) {
+  background-size: 0 1px;
+  background-position: 100% 100%;
+  background-image: linear-gradient($color, $color);
+  background-repeat: no-repeat;
+  text-decoration: none !important;
+
+  transition-property: background-size, color;
+  transition-duration: $timing;
+  transition-timing-function: $easing;
+  will-change: background-size;
+
+  &:hover,
+  &.focus-visible {
+    background-position: 0 100%;
+    background-size: 100% 1px;
+  }
+}
+
+
+@mixin line-animate-out($color: currentColor) {
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-image: linear-gradient($color, $color);
+  background-repeat: no-repeat;
+  text-decoration: none !important;
+
+  transition-property: background-size, color;
+  transition-duration: $timing;
+  transition-timing-function: $easing;
+  will-change: background-size;
+
+  &:hover,
+  &.focus-visible {
+    background-position: 100% 100%;
+    background-size: 0 1px;
+  }
+}

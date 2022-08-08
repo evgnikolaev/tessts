@@ -2,6 +2,7 @@
 
 {% block content %}
 
+
     {# button #}
     <div class="py-40">
         <div class="container">
@@ -73,6 +74,33 @@
                     theme:"light"
                 }
             } %}
+        </div>
+    </div>
+
+
+    {# field #}
+    <div class="py-40">
+        <div class="container">
+            {% for field in fields %}
+                <div class="py-8">
+                    {% view "@field" with {
+                        field:field
+                    } %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {# field #}
+    <div class="py-40 bg-blue">
+        <div class="container">
+            {% for field in fields2 %}
+                <div class="py-8">
+                    {% view "@field" with {
+                        field:field
+                    } %}
+                </div>
+            {% endfor %}
         </div>
     </div>
 
