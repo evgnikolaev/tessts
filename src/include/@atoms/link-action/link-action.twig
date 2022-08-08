@@ -1,0 +1,29 @@
+{% if link.href %}
+    <a href="{{ link.href }}"
+       class="link-action {% if link.disabled %} link-action--disabled{% endif %} {% if link.theme %} link-action--{{ link.theme }}{% endif %}"
+       {% if link.title %}title="{{ link.title }}"{% endif %}
+    >
+        {% if link.text %}
+            <span class="link-action__text">{{ link.text }}</span>
+        {% endif %}
+        {% if link.icon %}
+            {% view "@icon" with {
+                icon:link.icon
+            } %}
+        {% endif %}
+    </a>
+{% else %}
+    <button
+            class="link-action {% if link.disabled %} link-action--disabled{% endif %} {% if link.theme %} link-action--{{ link.theme }}{% endif %}"
+            {% if link.title %}title="{{ link.title }}"{% endif %}
+    >
+        {% if link.text %}
+            <span class="link-action__text">{{ link.text }}</span>
+        {% endif %}
+        {% if link.icon %}
+            {% view "@icon" with {
+                icon:link.icon
+            } %}
+        {% endif %}
+    </button>
+{% endif %}
