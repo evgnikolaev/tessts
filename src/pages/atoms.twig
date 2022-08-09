@@ -2,7 +2,6 @@
 
 {% block content %}
 
-
     {# button #}
     <div class="py-40">
         <div class="container">
@@ -150,6 +149,18 @@
                     }
                 } %}
             </form>
+        </div>
+    </div>
+
+
+    {# field-search#}
+    <div class="py-40">
+        <div class="container">
+            {% view '@field-search' with {
+                field: {
+                    placeholder: "Поиск по материалам"
+                }
+            } %}
         </div>
     </div>
 
