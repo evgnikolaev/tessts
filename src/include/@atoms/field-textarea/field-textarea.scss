@@ -1,0 +1,67 @@
+.textarea-shell {
+  position: relative;
+
+  .parsley-errors-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: $color-error;
+    @include text-small;
+  }
+}
+
+.textarea {
+  font-family: $ff-base;
+  display: block;
+  width: 100%;
+  height: rem(96);
+  min-height: rem(60);
+  border: 2px solid $color-grey-light;
+  padding: rem(12) rem(22);
+  background-color: transparent;
+  color: $color-black;
+  border-radius: 0;
+  resize: vertical;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  @include defaultTransition(border-color, box-shadow);
+  @include text-default;
+
+  &:focus {
+    outline: none;
+    border-color: $color-blue;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $color-dark-grey;
+    @include text-small;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    resize: none;
+
+    &::placeholder {
+      color: rgba($color-grey, 0.5);
+    }
+  }
+
+  &--light {
+    border-color: transparent;
+    background-color: $color-white;
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  &--fixed {
+    max-height: rem(140);
+  }
+
+  &.parsley-error {
+    border-color: $color-error;
+  }
+}

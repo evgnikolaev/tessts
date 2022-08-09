@@ -125,6 +125,9 @@
       }
     }
 
+    #{$root}.parsley-error & {
+      border-color: $color-error;
+    }
   }
 
 
@@ -166,4 +169,7 @@
 
   }
 
+  & ~ .parsley-errors-list {
+    display: none;
+  }
 }

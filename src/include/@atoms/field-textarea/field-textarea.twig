@@ -1,0 +1,11 @@
+<div class="textarea-shell">
+	<textarea id="{{ field.id }}"
+              class="textarea{% if field.theme %} textarea--{{ field.theme }}{% endif %}{% if field.class %} {{ field.class }}{% endif %}{{ field.fixed ? ' textarea--fixed' : ''}}"
+              name="{{ field.name }}"
+            {% if field.attr %} {{ field.attr }}{% endif %}
+            {% if field.autocomplete %} autocomplete="{{ field.autocomplete }}"{% endif %}
+            {% if field.disabled %} disabled{% endif %}
+            {% if field.readonly %} readonly{% endif %}
+            {% if field.required %} required{% endif %}
+            {% if field.placeholder %} placeholder="{{ field.placeholder }}"{% endif %}></textarea>
+</div>

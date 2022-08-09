@@ -6,9 +6,26 @@ import './utils/userAgent';
 
 import './libs';
 
-import { devices } from './utils/breakpoints';
+import {devices} from './utils/breakpoints';
 
 window.UPB = window.UPB || {};
 window.breakpoints = devices;
 
 __webpack_public_path__ = window.__webpack_public_path__ || '';
+
+window.breakpoints = devices;
+
+document.addEventListener('DOMContentLoaded', () => {
+
+});
+
+window.addEventListener('load', () => {
+	document.documentElement.classList.add('is-loaded');
+});
+
+window.addEventListener('reinit', () => {
+	window.dispatchEvent(new CustomEvent('init.lazyload'));
+	window.dispatchEvent(new CustomEvent('init.validation'));
+	window.dispatchEvent(new CustomEvent('init.mask'));
+	window.dispatchEvent(new CustomEvent('init.scrollAnimation'));
+});
