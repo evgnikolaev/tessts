@@ -3,12 +3,6 @@
 {% block content %}
 
 
-
-
-
-
-
-
     {# button #}
     <div class="py-40">
         <div class="container">
@@ -111,7 +105,20 @@
     </div>
 
 
-    {# field #}
+
+
+    {# field-search#}
+    <div class="py-40">
+        <div class="container">
+            {% view '@field-search' with {
+                field: {
+                    placeholder: "Поиск по материалам"
+                }
+            } %}
+        </div>
+    </div>
+
+    {# form #}
     <div class="py-40">
         <div class="container">
             <form action="" data-parsley-validate>
@@ -135,7 +142,7 @@
     </div>
 
 
-    {# field #}
+    {# form #}
     <div class="py-40 bg-blue">
         <div class="container">
             <form action="" data-parsley-validate>
@@ -159,17 +166,6 @@
         </div>
     </div>
 
-
-    {# field-search#}
-    <div class="py-40">
-        <div class="container">
-            {% view '@field-search' with {
-                field: {
-                    placeholder: "Поиск по материалам"
-                }
-            } %}
-        </div>
-    </div>
 
     {# factor #}
     <div class="py-40">
@@ -196,6 +192,7 @@
             {% endfor %}
         </div>
     </div>
+
 {% endblock %}
 
 

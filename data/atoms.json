@@ -6,7 +6,7 @@
       "title": "Подробнее"
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее"
     },
@@ -16,7 +16,7 @@
       "disabled": true
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее",
       "disabled": true
@@ -29,7 +29,7 @@
       }
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее",
       "icon": {
@@ -39,19 +39,57 @@
     {
       "text": "Подробнее",
       "title": "Подробнее",
-      "disabled": true,
+      "icon": {
+        "name": "24/arrow-right"
+      },
+      "disabled": true
+    },
+    {
+      "text": "Подробнее",
+      "title": "Подробнее",
+      "theme": "blue"
+    },
+    {
+      "href": "javascript:void(0);",
+      "text": "Подробнее",
+      "title": "Подробнее",
+      "theme": "blue"
+    },
+    {
+      "text": "Подробнее",
+      "title": "Подробнее",
+      "theme": "blue",
       "icon": {
         "name": "24/arrow-right"
       }
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее",
-      "disabled": true,
+      "theme": "blue",
       "icon": {
         "name": "24/arrow-right"
       }
+    },
+    {
+      "text": "Подробнее",
+      "title": "Подробнее",
+      "theme": "blue",
+      "icon": {
+        "name": "24/arrow-right"
+      },
+      "disabled": true
+    },
+    {
+      "href": "javascript:void(0);",
+      "text": "Подробнее",
+      "title": "Подробнее",
+      "theme": "blue",
+      "icon": {
+        "name": "24/arrow-right"
+      },
+      "disabled": true
     }
   ],
   "buttons2": [
@@ -61,7 +99,7 @@
       "theme": "light"
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее",
       "theme": "light"
@@ -69,15 +107,15 @@
     {
       "text": "Подробнее",
       "title": "Подробнее",
-      "disabled": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее",
-      "disabled": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     },
     {
       "text": "Подробнее",
@@ -88,7 +126,7 @@
       }
     },
     {
-      "href": "javascript:void(0)",
+      "href": "javascript:void(0);",
       "text": "Подробнее",
       "title": "Подробнее",
       "theme": "light",
@@ -99,21 +137,11 @@
     {
       "text": "Подробнее",
       "title": "Подробнее",
-      "disabled": true,
       "theme": "light",
       "icon": {
         "name": "24/arrow-right"
-      }
-    },
-    {
-      "href": "javascript:void(0)",
-      "text": "Подробнее",
-      "title": "Подробнее",
-      "disabled": true,
-      "theme": "light",
-      "icon": {
-        "name": "24/arrow-right"
-      }
+      },
+      "disabled": true
     }
   ],
   "links": [
@@ -122,9 +150,9 @@
       "title": "Все программы"
     },
     {
+      "href": "javascript:void(0);",
       "text": "Все программы",
-      "title": "Все программы",
-      "href": "javascript:void(0)"
+      "title": "Все программы"
     },
     {
       "text": "Все программы",
@@ -134,29 +162,21 @@
       }
     },
     {
+      "href": "javascript:void(0);",
       "text": "Все программы",
       "title": "Все программы",
-      "href": "javascript:void(0)",
       "icon": {
         "name": "24/arrow-right"
       }
     },
     {
+      "href": "javascript:void(0);",
       "text": "Все программы",
       "title": "Все программы",
+      "disabled": true,
       "icon": {
         "name": "24/arrow-right"
-      },
-      "disabled": true
-    },
-    {
-      "text": "Все программы",
-      "title": "Все программы",
-      "href": "javascript:void(0)",
-      "icon": {
-        "name": "24/arrow-right"
-      },
-      "disabled": true
+      }
     }
   ],
   "links2": [
@@ -166,46 +186,37 @@
       "theme": "light"
     },
     {
+      "href": "javascript:void(0);",
       "text": "Все программы",
       "title": "Все программы",
-      "href": "javascript:void(0)",
       "theme": "light"
     },
     {
       "text": "Все программы",
       "title": "Все программы",
+      "theme": "light",
       "icon": {
         "name": "24/arrow-right"
-      },
-      "theme": "light"
+      }
     },
     {
+      "href": "javascript:void(0);",
       "text": "Все программы",
       "title": "Все программы",
-      "href": "javascript:void(0)",
+      "theme": "light",
       "icon": {
         "name": "24/arrow-right"
-      },
-      "theme": "light"
+      }
     },
     {
+      "href": "javascript:void(0);",
       "text": "Все программы",
       "title": "Все программы",
-      "icon": {
-        "name": "24/arrow-right"
-      },
+      "theme": "light",
       "disabled": true,
-      "theme": "light"
-    },
-    {
-      "text": "Все программы",
-      "title": "Все программы",
-      "href": "javascript:void(0)",
       "icon": {
         "name": "24/arrow-right"
-      },
-      "disabled": true,
-      "theme": "light"
+      }
     }
   ],
   "fields": [
@@ -213,14 +224,14 @@
       "input": true,
       "id": "input-1",
       "name": "input-1",
-      "placeholder": "Ваш email",
+      "placeholder": "Ваш e-mail",
       "required": true
     },
     {
       "input": true,
       "id": "input-2",
       "name": "input-2",
-      "placeholder": "Ваш email",
+      "placeholder": "Ваш e-mail",
       "required": true,
       "disabled": true
     },
@@ -228,21 +239,18 @@
       "checkbox": true,
       "id": "checkbox-1",
       "name": "checkbox-1",
-      "required": true,
       "text": "checkbox text"
     },
     {
       "radio": true,
       "id": "radio-1",
       "name": "radio-1",
-      "required": true,
       "text": "radio text"
     },
     {
       "checkbox": true,
       "id": "checkbox-2",
       "name": "checkbox-2",
-      "required": true,
       "text": "checkbox text",
       "disabled": true
     },
@@ -250,100 +258,91 @@
       "radio": true,
       "id": "radio-2",
       "name": "radio-2",
-      "required": true,
       "text": "radio text",
       "disabled": true
     },
     {
       "checkbox": true,
-      "id": "checkbox-2",
-      "name": "checkbox-2",
-      "required": true,
+      "id": "checkbox-3",
+      "name": "checkbox-3",
       "text": "checkbox text",
-      "disabled": true,
-      "checked": true
+      "checked": true,
+      "disabled": true
     },
     {
       "radio": true,
-      "id": "radio-2",
-      "name": "radio-2",
-      "required": true,
+      "id": "radio-3",
+      "name": "radio-3",
       "text": "radio text",
-      "disabled": true,
-      "checked": true
+      "checked": true,
+      "disabled": true
     }
   ],
   "fields2": [
     {
       "input": true,
-      "id": "input-1",
-      "name": "input-1",
-      "placeholder": "Ваш email",
-      "required": true,
-      "theme": "light"
+      "id": "input-3",
+      "name": "input-3",
+      "placeholder": "Ваш e-mail",
+      "theme": "light",
+      "required": true
     },
     {
       "input": true,
-      "id": "input-2",
-      "name": "input-2",
-      "placeholder": "Ваш email",
+      "id": "input-4",
+      "name": "input-4",
+      "placeholder": "Ваш e-mail",
+      "theme": "light",
       "required": true,
-      "disabled": true,
-      "theme": "light"
+      "disabled": true
     },
     {
       "checkbox": true,
-      "id": "checkbox-1",
-      "name": "checkbox-1",
-      "required": true,
+      "id": "checkbox-4",
+      "name": "checkbox-4",
       "text": "checkbox text",
       "theme": "light"
     },
     {
       "radio": true,
-      "id": "radio-1",
-      "name": "radio-1",
-      "required": true,
+      "id": "radio-4",
+      "name": "radio-4",
       "text": "radio text",
       "theme": "light"
     },
     {
       "checkbox": true,
-      "id": "checkbox-2",
-      "name": "checkbox-2",
-      "required": true,
+      "id": "checkbox-5",
+      "name": "checkbox-5",
       "text": "checkbox text",
-      "disabled": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     },
     {
       "radio": true,
-      "id": "radio-2",
-      "name": "radio-2",
-      "required": true,
+      "id": "radio-5",
+      "name": "radio-5",
       "text": "radio text",
-      "disabled": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     },
     {
       "checkbox": true,
-      "id": "checkbox-2",
-      "name": "checkbox-2",
-      "required": true,
+      "id": "checkbox-6",
+      "name": "checkbox-6",
       "text": "checkbox text",
-      "disabled": true,
       "checked": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     },
     {
       "radio": true,
-      "id": "radio-2",
-      "name": "radio-2",
-      "required": true,
+      "id": "radio-6",
+      "name": "radio-6",
       "text": "radio text",
-      "disabled": true,
       "checked": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     }
   ],
   "form": [
@@ -397,66 +396,176 @@
       "name": "radio-form-1",
       "text": "radio",
       "required": true
+    },
+    {
+      "select": true,
+      "id": "select-form-2",
+      "name": "select-form-2",
+      "attr": "data-attr",
+      "required": true,
+      "options": [
+        {
+          "selected": true,
+          "value": "value-1",
+          "text": "value-1"
+        },
+        {
+          "value": "value-2",
+          "text": "value-2"
+        },
+        {
+          "value": "value-3",
+          "text": "value-3"
+        },
+        {
+          "value": "value-4",
+          "text": "value-4"
+        },
+        {
+          "value": "value-5",
+          "text": "value-5"
+        }
+      ]
+    },
+    {
+      "select": true,
+      "id": "select-form-3",
+      "name": "select-form-3",
+      "attr": "data-attr",
+      "disabled": true,
+      "options": [
+        {
+          "selected": true,
+          "value": "value-1",
+          "text": "value-1"
+        },
+        {
+          "value": "value-2",
+          "text": "value-2"
+        },
+        {
+          "value": "value-3",
+          "text": "value-3"
+        },
+        {
+          "value": "value-4",
+          "text": "value-4"
+        }
+      ]
     }
   ],
   "form2": [
     {
       "input": true,
-      "id": "input-form-1",
-      "name": "input-form-1",
+      "id": "input-form-2",
+      "name": "input-form-2",
       "placeholder": "Имя",
-      "required": true,
-      "theme": "light"
+      "theme": "light",
+      "required": true
     },
     {
       "input": true,
-      "id": "input-tel-form-1",
-      "name": "input-tel-form-1",
+      "id": "input-tel-form-2",
+      "name": "input-tel-form-2",
       "type": "tel",
       "placeholder": "Телефон",
-      "required": true,
-      "theme": "light"
+      "theme": "light",
+      "required": true
     },
     {
       "input": true,
-      "id": "input-email-form-1",
-      "name": "input-email-form-1",
+      "id": "input-email-form-2",
+      "name": "input-email-form-2",
       "type": "email",
       "placeholder": "E-mail",
-      "required": true,
-      "theme": "light"
+      "theme": "light",
+      "required": true
     },
     {
       "textarea": true,
-      "id": "textarea-form-1",
-      "name": "textarea-form-1",
+      "id": "textarea-form-3",
+      "name": "textarea-form-3",
       "placeholder": "Описание",
-      "required": true,
-      "theme": "light"
+      "theme": "light",
+      "required": true
     },
     {
       "textarea": true,
-      "id": "textarea-form-2",
-      "name": "textarea-form-2",
+      "id": "textarea-form-4",
+      "name": "textarea-form-4",
       "placeholder": "Описание",
-      "disabled": true,
-      "theme": "light"
+      "theme": "light",
+      "disabled": true
     },
     {
       "checkbox": true,
-      "id": "checkbox-form-1",
-      "name": "checkbox-form-1",
+      "id": "checkbox-form-2",
+      "name": "checkbox-form-2",
       "text": "checkbox",
-      "required": true,
-      "theme": "light"
+      "theme": "light",
+      "required": true
     },
     {
       "radio": true,
-      "id": "radio-form-1",
-      "name": "radio-form-1",
+      "id": "radio-form-2",
+      "name": "radio-form-2",
       "text": "radio",
+      "theme": "light",
+      "required": true
+    },
+    {
+      "select": true,
+      "id": "select-form-5",
+      "name": "select-form-5",
+      "attr": "data-attr",
       "required": true,
-      "theme": "light"
+      "theme": "light",
+      "options": [
+        {
+          "selected": true,
+          "value": "value-1",
+          "text": "value-1"
+        },
+        {
+          "value": "value-2",
+          "text": "value-2"
+        },
+        {
+          "value": "value-3",
+          "text": "value-3"
+        },
+        {
+          "value": "value-4",
+          "text": "value-4"
+        }
+      ]
+    },
+    {
+      "select": true,
+      "id": "select-form-6",
+      "name": "select-form-6",
+      "attr": "data-attr",
+      "disabled": true,
+      "theme": "light",
+      "options": [
+        {
+          "selected": true,
+          "value": "value-1",
+          "text": "value-1"
+        },
+        {
+          "value": "value-2",
+          "text": "value-2"
+        },
+        {
+          "value": "value-3",
+          "text": "value-3"
+        },
+        {
+          "value": "value-4",
+          "text": "value-4"
+        }
+      ]
     }
   ],
   "factors": [
