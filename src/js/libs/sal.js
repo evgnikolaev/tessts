@@ -12,7 +12,6 @@ export default {
 			disabledClassName: 'animate-disabled',
 			rootMargin: '50px',
 		});
-
 		document.documentElement.classList.remove('animate-disabled');
 
 		window.scrollAnimation = animation;
