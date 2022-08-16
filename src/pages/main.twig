@@ -2,8 +2,17 @@
 
 {% block content %}
 
-    {% view "&factors-block" with {
-        block:factorsBlock
-    } %}
+    <div class="mb-md-112 mb-64">
+        {% view "&slider-card" with {
+            slider:sliderCard
+        } %}
+    </div>
+
+    <div class="mb-md-112 mb-64">
+        {% view "&factors-block" with {
+            block:factorsBlock
+        } %}
+    </div>
+
 
 {% endblock %}

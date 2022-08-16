@@ -5,6 +5,7 @@ import './utils/scroll';
 import './utils/userAgent';
 
 import './libs';
+import SlidersInit from './components/slider';
 
 import {devices} from './utils/breakpoints';
 
@@ -16,8 +17,9 @@ __webpack_public_path__ = window.__webpack_public_path__ || '';
 window.breakpoints = devices;
 
 document.addEventListener('DOMContentLoaded', () => {
-
+	SlidersInit.init();
 });
+
 
 window.addEventListener('load', () => {
 	document.documentElement.classList.add('is-loaded');
