@@ -1,11 +1,828 @@
 {
-  "colors": [
-    "white",
-    "black"
-  ],
+	"footer": {
+		"logo": {
+			"href": "./",
+			"icon": {
+				"name": "logo",
+				"size": "fit"
+			}
+		},
+		"link": {
+			"href": "#modal-sites",
+			"text": "Все сайты НЛМК",
+			"attr": "data-modal"
+		},
+		"navigation": [
+			{
+				"href": "javascript:void(0);",
+				"text": "Университет"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Кампус",
+				"active": true
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Образовательные решения"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Мероприятия"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Медиа-центр"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Помощь"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Контакты"
+			}
+		],
+		"phone": {
+			"href": "+74742441111",
+			"text": "+7 4742 44 11 11"
+		},
+		"address": "пр.Мира, 22, Липецк",
+		"email": {
+			"href": "university@nlmk.com",
+			"text": "university@nlmk.com"
+		},
+		"action": {
+			"href": "javascript:void(0);",
+			"text": "Написать нам",
+			"title": "Написать нам",
+			"mobFit": true,
+			"mobTheme": "blue"
+		},
+		"social": [
+			{
+				"href": "javascript:void(0);",
+				"title": "Vkontakte",
+				"icon": {
+					"name": "social/vk"
+				}
+			},
+			{
+				"href": "javascript:void(0);",
+				"title": "Facebook",
+				"icon": {
+					"name": "social/fb"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Политика использования Cookies"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Дисклеймер"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Карта сайта"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Раскрытие информации"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Антикоррупционная политика"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Политика конфиденциальности"
+			},
+			{
+				"href": "javascript:void(0);",
+				"text": "Политика использования персональных данных"
+			}
+		],
+		"copyright": "© 2020 Корпоративный университет НЛМК",
+		"text": "Сообщить об ошибке. Нашли опечатку? Выделите фрагмент текст с ошибкой и нажмите сочетание клавиш Ctrl+Enter",
+		"cookies_settings": {
+			"text": "Настройки конфиденциальности",
+			"href": "#modal-cookies-settings",
+			"attr": "data-modal"
+		},
+		"creator": {
+			"href": "https://www.uplab.ru/",
+			"text": "Сделано в",
+			"icon": {
+				"name": "uplab",
+				"size": "fit"
+			}
+		}
+	},
+	"modals": [
+		{
+			"name": "modal-message",
+			"id": "modal-cookies-message",
+			"heading": "Измените настройки",
+			"text": "Для того, чтобы смотреть видео и делиться новостью в соцсетях включите в настройках конфиденциальности куки социальных сетей",
+			"action": {
+				"text": "Открыть настройки",
+				"title": "Открыть настройки",
+				"attr": "data-modal",
+				"href": "#modal-cookies-settings"
+			}
+		},
+		{
+			"timer": "5000",
+			"name": "modal-message",
+			"id": "modal-message2",
+			"heading": "Ваше сообщение отправлено",
+			"text": "Мы изучим ваше обращение и вскоре свяжемся с вами",
+			"action": {
+				"text": "Понятно",
+				"title": "Понятно",
+				"attr": "data-modal-close"
+			}
+		},
+		{
+			"name": "modal-message",
+			"id": "modal-message-reload",
+			"text": "Страница будет перезагружена через 3c"
+		},
+		{
+			"timer": "5000",
+			"name": "modal-message",
+			"id": "modal-message2",
+			"heading": "Ваше сообщение отправлено",
+			"text": "Мы изучим ваше обращение и вскоре свяжемся с вами",
+			"action": {
+				"text": "Понятно",
+				"title": "Понятно",
+				"attr": "data-modal-close"
+			}
+		},
+		{
+			"name": "modal-form",
+			"id": "modal-form",
+			"heading": "Регистрация",
+			"form": {
+				"id": "form-modal",
+				"name": "form-modal",
+				"method": "POST",
+				"action": "/ajax/registration/?repo=nlmk-education.frontend&status=success",
+				"attr": "data-ajax-form",
+				"fields": [
+					{
+						"label": "Как к вам можно обращаться?",
+						"input": true,
+						"id": "form-modal-input-1",
+						"name": "form-modal-input-1",
+						"placeholder": "Имя и Фамилия",
+						"required": true
+					},
+					{
+						"label": "Где вы работаете?",
+						"input": true,
+						"id": "form-modal-input-2",
+						"name": "form-modal-input-2",
+						"placeholder": "Компания",
+						"required": true
+					},
+					{
+						"label": "E-mail",
+						"input": true,
+						"type": "email",
+						"id": "form-modal-input-3",
+						"name": "form-modal-input-3",
+						"placeholder": "nlmk@mail.ru",
+						"required": true
+					},
+					{
+						"label": "Кем вы работаете?",
+						"input": true,
+						"id": "form-modal-input-4",
+						"name": "form-modal-input-4",
+						"placeholder": "Должность"
+					},
+					{
+						"label": "Ваш телефон",
+						"input": true,
+						"type": "tel",
+						"id": "form-modal-input-5",
+						"name": "form-modal-input-5",
+						"placeholder": "Ваш телефон"
+					}
+				],
+				"agreement": {
+					"checkbox": true,
+					"id": "form-modal-checkbox-1",
+					"name": "form-modal-checkbox-1",
+					"text": "Я согласен/согласна с <a href='javascript:void(0);' target='_blank'>Политикой конфиденциальности</a> и <a href='javascript:void(0);' target='_blank'>Обработкой персональной данных</a>",
+					"required": true
+				},
+				"require_message": "Все поля, обязательные для заполнения",
+				"submit": {
+					"type": "submit",
+					"text": "Зарегистрироваться",
+					"title": "Зарегистрироваться",
+					"theme": "light",
+					"icon": {
+						"name": "24/arrow-right"
+					}
+				}
+			},
+			"text": "Мы изучим ваше обращение и вскоре свяжемся с вами",
+			"accept": {
+				"title": "Понятно",
+				"text": "Понятно",
+				"attr": "data-modal-close",
+				"mobFit": true,
+				"mobTheme": "blue"
+			}
+		},
+		{
+			"name": "modal-form",
+			"id": "modal-application",
+			"heading": "Оставить заявку",
+			"form": {
+				"id": "form-modal-reg",
+				"name": "form-modal-reg",
+				"method": "POST",
+				"action": "/ajax/application/?repo=nlmk-education.frontend&status=success",
+				"attr": "data-ajax-form",
+				"fields": [
+					{
+						"label": "Как к вам можно обращаться?",
+						"input": true,
+						"id": "form-modal-reg-input-1",
+						"name": "form-modal-reg-input-1",
+						"placeholder": "Имя и Фамилия",
+						"required": true
+					},
+					{
+						"label": "Где вы работаете?",
+						"input": true,
+						"id": "from-modal-reg-input-2",
+						"name": "from-modal-reg-input-2",
+						"placeholder": "Компания",
+						"required": true
+					},
+					{
+						"label": "E-mail",
+						"input": true,
+						"type": "email",
+						"id": "from-modal-reg-input-3",
+						"name": "from-modal-reg-input-3",
+						"placeholder": "nlmk@mail.ru",
+						"required": true
+					},
+					{
+						"label": "Ваш телефон",
+						"input": true,
+						"type": "tel",
+						"id": "from-modal-reg-input-5",
+						"name": "from-modal-reg-input-5",
+						"placeholder": "Ваш телефон",
+						"required": true
+					},
+					{
+						"full": true,
+						"label": "Сообщение",
+						"textarea": true,
+						"id": "from-modal-reg-input-4",
+						"name": "from-modal-reg-input-4",
+						"placeholder": "Текст сообщения",
+						"required": true
+					}
+				],
+				"agreement": {
+					"checkbox": true,
+					"id": "from-modal-reg-checkbox-1",
+					"name": "from-modal-reg-checkbox-1",
+					"text": "Я согласен/согласна с <a href='javascript:void(0);' target='_blank'>Политикой конфиденциальности</a> и <a href='javascript:void(0);' target='_blank'>Обработкой персональной данных</a>",
+					"required": true
+				},
+				"require_message": "Все поля, обязательные для заполнения",
+				"submit": {
+					"type": "submit",
+					"text": "Отправить",
+					"title": "Отправить",
+					"theme": "light",
+					"icon": {
+						"name": "24/arrow-right"
+					}
+				}
+			}
+		},
+		{
+			"name": "modal-form",
+			"id": "modal-form2",
+			"heading": "Записаться на программу",
+			"form": {
+				"id": "form-modal2",
+				"name": "form-modal2",
+				"method": "POST",
+				"action": "/ajax/request/?repo=nlmk-education.frontend&status=success",
+				"attr": "data-ajax-form",
+				"fields": [
+					{
+						"label": "Как к вам можно обращаться?",
+						"input": true,
+						"id": "form-modal2-input-1",
+						"name": "form-modal2-input-1",
+						"placeholder": "Имя и Фамилия",
+						"required": true
+					},
+					{
+						"label": "Ваш телефон",
+						"input": true,
+						"type": "tel",
+						"id": "form-modal2-input-5",
+						"name": "form-modal2-input-5",
+						"placeholder": "Ваш телефон",
+						"required": true
+					},
+					{
+						"label": "E-mail",
+						"input": true,
+						"type": "email",
+						"id": "form-modal2-input-3",
+						"name": "form-modal2-input-3",
+						"placeholder": "nlmk@mail.ru",
+						"required": true
+					},
+					{
+						"label": "Где вы работаете?",
+						"input": true,
+						"id": "form-modal2-input-2",
+						"name": "form-modal2-input-2",
+						"placeholder": "Компания",
+						"required": true
+					},
+					{
+						"label": "Кем вы работаете?",
+						"input": true,
+						"id": "form-modal2-input-4",
+						"name": "form-modal2-input-4",
+						"placeholder": "Должность",
+						"required": true
+					}
+				],
+				"agreement": {
+					"checkbox": true,
+					"id": "form-modal2-checkbox-1",
+					"name": "form-modal2-checkbox-1",
+					"text": "Я согласен/согласна с <a href='javascript:void(0);' target='_blank'>Политикой конфиденциальности</a> и <a href='javascript:void(0);' target='_blank'>Обработкой персональной данных</a>",
+					"required": true
+				},
+				"require_message": "Все поля, обязательные для заполнения",
+				"submit": {
+					"type": "submit",
+					"text": "Отправить",
+					"title": "Отправить",
+					"theme": "light",
+					"icon": {
+						"name": "24/arrow-right"
+					}
+				}
+			},
+			"text": "Мы изучим ваше обращение и вскоре свяжемся с вами",
+			"accept": {
+				"title": "Понятно",
+				"text": "Понятно",
+				"attr": "data-modal-close",
+				"mobFit": true,
+				"mobTheme": "blue"
+			}
+		},
+		{
+			"icon": {
+				"name": "64/success",
+				"size": "fit"
+			},
+			"name": "modal-side-message",
+			"id": "modal-side-message",
+			"heading": "Вы зарегистрированы!",
+			"text": "Мы отправили приглашение на ваш e-mail.<br><br>Для посещения мероприятия на входе вам нужно будет просто показать этот e-mail \u2028с экрана вашего смартфона.",
+			"action": {
+				"text": "Понятно",
+				"title": "Понятно",
+				"attr": "data-modal-close",
+				"mobFit": true,
+				"theme": "mob-blue"
+			}
+		},
+		{
+			"name": "modal-message",
+			"id": "modal-error",
+			"heading": "Ошибка",
+			"text": "Попробуйте позже",
+			"action": {
+				"text": "Понятно",
+				"title": "Понятно",
+				"attr": "data-modal-close"
+			}
+		},
+		{
+			"name": "modal-error",
+			"id": "modal-error-message",
+			"heading": "Сообщить об ошибке",
+			"form": {
+				"id": "form-modal-error-message",
+				"name": "form-modal-error-message",
+				"method": "POST",
+				"action": "/ajax/error/?repo=nlmk-education.frontend&status=success",
+				"attr": "data-ajax-form",
+				"fields": [
+					{
+						"label": "Текст с ошибкой",
+						"textarea": true,
+						"id": "form-error-modal-textarea-1",
+						"name": "form-error-modal-textarea-1",
+						"required": true,
+						"readonly": true,
+						"fixed": true,
+						"attr": "data-error-field"
+					},
+					{
+						"label": "Введите правильный вариант",
+						"textarea": true,
+						"id": "form-error-modal-textarea-2",
+						"name": "form-error-modal-textarea-2",
+						"fixed": true,
+						"required": true
+					}
+				],
+				"submit": {
+					"type": "submit",
+					"text": "Отправить",
+					"title": "Отправить"
+				}
+			}
+		},
+		{
+			"name": "modal-cookies",
+			"id": "modal-cookies-settings",
+			"switch_text": "Страница будет перезагружена через<span>3</span>с",
+			"heading": " Политика использования Cookie",
+			"text": "<p>Этот веб-сайт использует файлы cookie, чтобы предоставить вам лучший пользовательский опыт.</p><p>Вы можете ознакомиться с подробной Политикой использования файлов cookie здесь.</p><p>Принципы, цели и правила обработки ваших персональных данных, а также сведения о принимаемых мерах к их защите, содержатся в Политике ПАО НЛМК в области обработки и защиты персональных данных.</p><p>Продолжая работу на сайте, вы подтверждаете свое согласие на использование всех файлов cookies. Нажмите кнопку «Разрешить», чтобы скрыть это сообщение.</p><p>Если вы не согласны с использованием таких файлов, вы можете настроить свой браузер, чтобы ограничить или исключить их использование.</p><h4>Функциональные куки</h4><p>Эти файлы cookie необходимы для обеспечения функциональности веб-сайта и поэтому не могут быть отключены.</p>",
+			"fields": {
+				"heading": "Дополнительные куки",
+				"list": [
+					{
+						"attr": "data-cookies-switch='analytics-cookies'",
+						"switch": true,
+						"id": "popup-switch-1",
+						"name": "popup-switch-1",
+						"heading": "Аналитические куки",
+						"text": "Эти файлы cookie используются для анализа поведения посетителей нашего веб-сайта, например, количества посетителей сайта и наиболее популярных страниц. Сохранение включенного файла cookie помогает нам улучшать наш веб-сайт."
+					},
+					{
+						"attr": "data-cookies-switch='social-cookies'",
+						"switch": true,
+						"id": "popup-switch-2",
+						"name": "popup-switch-2",
+						"heading": "Куки социальных сетей",
+						"text": "Эти файлы cookie используются для интеграции платформ социальных сетей с целью предоставления дополнительного контента или сервисов."
+					},
+					{
+						"attr": "data-cookies-switch='adv-cookies'",
+						"switch": true,
+						"id": "popup-switch-3",
+						"name": "popup-switch-3",
+						"heading": "Рекламные",
+						"text": "Эти файлы cookie могут использоваться для показа вам рекламы на основе актуальных тем, которые вас интересуют, а также для измерения эффективности рекламы на сторонних веб-сайтах. Они поступают от третьих лиц и собирают информацию, чтобы понять ваши демографические данные, такие как возраст и пол."
+					}
+				]
+			},
+			"actions": [
+				{
+					"text": "Разрешить все cookie",
+					"title": "Разрешить все cookie",
+					"attr": "data-accept-cookies"
+				},
+				{
+					"text": "Сохранить настройки",
+					"title": "Сохранить настройки",
+					"attr": "data-cookies-settings-save"
+				}
+			]
+		},
+		{
+			"name": "modal-sites",
+			"id": "modal-sites",
+			"groups": [
+				{
+					"title": "НЛМК Россия",
+					"items": [
+						{
+							"caption": "Производство",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Липецк"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "ВИЗ-СТАЛЬ"
+								}
+							]
+						},
+						{
+							"caption": "Образование",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Урал"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Урал сервис"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "ВТОРЧЕРМЕТ"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Калуга"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК-МЕТИЗ"
+								}
+							]
+						},
+						{
+							"caption": "Сырье",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Алтай"
+								}
+							]
+						},
+						{
+							"caption": "Проектирование",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Урал"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "НЛМК Урал сервис"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "ВТОРЧЕРМЕТ"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "НЛМК Европа",
+					"items": [
+						{
+							"caption": "Производство",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK LA LOUVIERE"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK STRASBOURG"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "DISTRUBUTION & SERVICE CENTRES"
+								}
+							]
+						},
+						{
+							"caption": "Образование",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK DANSTEEL"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK CLABECQ"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK VERONA"
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "НЛМК США",
+					"items": [
+						{
+							"caption": "Производство",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK LA LOUVIERE"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK STRASBOURG"
+								},
+								{
+									"href": "javascript:void(0);",
+									"text": "DISTRUBUTION & SERVICE CENTRES"
+								}
+							]
+						},
+						{
+							"caption": "Образование",
+							"list": [
+								{
+									"href": "javascript:void(0);",
+									"text": "NLMK INDIANA"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "modal-gallery",
+			"id": "modal-gallery",
+			"heading": "Зима–весна 2017",
+			"slider": {
+				"slides": [
+					{
+						"image": {
+							"src": "tmp/gallery/image-1.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"text": "Церемония награждения выпускников Университета НЛМК курса «Управление финансами»"
+					},
+					{
+						"image": {
+							"src": "tmp/gallery/image-2.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"text": "Церемония награждения выпускников Университета НЛМК курса «Управление финансами»"
+					},
+					{
+						"image": {
+							"src": "tmp/gallery/image-3.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"text": "Церемония награждения выпускников Университета НЛМК курса «Управление финансами»"
+					},
+					{
+						"image": {
+							"src": "tmp/gallery/image-4.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"text": "Церемония награждения выпускников Университета НЛМК курса «Управление финансами»"
+					},
+					{
+						"image": {
+							"src": "tmp/gallery/image-5.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"text": "Церемония награждения выпускников Университета НЛМК курса «Управление финансами»"
+					}
+				]
+			}
+		},
+		{
+			"name": "modal-gallery",
+			"id": "modal-gallery2",
+			"heading": "Зима–весна 2017",
+			"slider": {
+				"slides": [
+					{
+						"image": {
+							"src": "tmp/gallery/image-1.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"text": "Церемония награждения выпускников Университета НЛМК курса «Управление финансами»"
+					}
+				]
+			}
+		},
+		{
+			"name": "modal-persons",
+			"id": "modal-persons",
+			"slider": {
+				"slides": [
+					{
+						"image": {
+							"src": "tmp/card-person/6.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"name": "Олег Багрин",
+						"caption": "ПРЕДСЕДАТЕЛЬ УЧЕНОГО СОВЕТА УНИВЕРСИТЕТА НЛМК. ЗАМЕСТИТЕЛЬ ПРЕДСЕДАТЕЛЯ СОВЕТА ДИРЕКТОРОВ НЛМК",
+						"text": "<p>Председатель Комитета по стратегическому планированию, член Комитета по цифровому развитию и Комитета по кадрам, вознаграждениям и социальной политике</p><p>Президент (Председатель Правления) с 2012 по март 2018 года. Член Совета директоров с 2004 года.</p><p>Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED.</p><p>Окончил Государственный университет управления (г.Москва) по специальности «Математические методы и исследование операций в экономике». Имеет степень кандидата экономических наук, степень MBA Кембриджского университета (Великобритания) Председатель Комитета по стратегическому планированию, член Комитета по цифровому развитию и Комитета по кадрам, вознаграждениям и социальной политике</p><p>Президент (Председатель Правления) с 2012 по март 2018 года. Член Совета директоров с 2004 года.</p><p>Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED. Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED.</p>"
+					},
+					{
+						"image": {
+							"src": "tmp/card-person/7.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"name": "Станислав Шекшня",
+						"caption": "ЧЛЕН СОВЕТА ДИРЕКТОРОВ НЛМК. НЕЗАВИСИМЫЙ ДИРЕКТОР.",
+						"text": "<p>Президент (Председатель Правления) с 2012 по март 2018 года. Член Совета директоров с 2004 года.</p><p>Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED.</p><p>Окончил Государственный университет управления (г.Москва) по специальности «Математические методы и исследование операций в экономике». Имеет степень кандидата экономических наук, степень MBA Кембриджского университета (Великобритания) Председатель Комитета по стратегическому планированию, член Комитета по цифровому развитию и Комитета по кадрам, вознаграждениям и социальной политике</p><p>Президент (Председатель Правления) с 2012 по март 2018 года. Член Совета директоров с 2004 года.</p><p>Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED. Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED.</p>"
+					},
+					{
+						"image": {
+							"src": "tmp/card-person/8.jpg",
+							"alt": "alt image",
+							"fill": true,
+							"swiper_lazy": true
+						},
+						"name": "Григорий Федоришин",
+						"caption": "ПРЕЗИДЕНТ НЛМК. ПРЕДСЕДАТЕЛЬ ПРАВЛЕНИЯ.",
+						"text": "<p>Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED. Олег Багрин является членом Совета директоров АО «ПГК». Также является Директором, Членом Совета директоров компании FLETCHER GROUP HOLDINGS LIMITED.</p>"
+					}
+				]
+			}
+		},
+		{
+			"name": "modal-video",
+			"id": "modal-video",
+			"video": {
+				"href": "https://youtu.be/WzNbp9IOmDw",
+				"provider": "youtube",
+				"id": "https://youtu.be/WzNbp9IOmDw",
+				"poster": {
+					"src": "tmp/video/video-bg-3.jpg",
+					"alt": "alt image",
+					"fit": true,
+					"fill": true
+				}
+			}
+		}
+	],
+	"colors": [
+		"white",
+		"black",
+		"blue",
+		"light-blue",
+		"light",
+		"grey"
+	],
+	"cookies": {
+		"switch_text": "Страница будет перезагружена через<span>3</span>c",
+		"text": "Этот веб-сайт использует файлы cookie, чтобы предоставить вам лучший пользовательский опыт. Вы можете узнать больше о том, какие файлы cookie мы используем, или отключить их использование, нажав «Настройки». Вы можете ознакомиться с <a href='javascript:void(0);' target='_blank'>Политикой использования файлов Cookie</a> и <a href='javascript:void(0);' target='_blank'>Политикой ПАО «НЛМК» в области обработки и защиты персональных данных</a>, в которых объясняется, как мы обрабатываем ваши личные данные. Продолжая работать на нашем сайте, вы подтверждаете свое согласие на использование всех файлов cookie. Нажмите кнопку «Разрешить все Cookie», чтобы скрыть это сообщение. Обратите внимание, что вы можете отозвать свое согласие в любое время.",
+		"actions": [
+			{
+				"text": "Разрешить все cookie",
+				"title": "Разрешить все cookie",
+				"attr": "data-accept-cookies",
+				"theme": "light"
+			},
+			{
+				"text": "Настройки",
+				"title": "Настройки",
+				"attr": "data-modal",
+				"href": "#modal-cookies-settings",
+				"theme": "light"
+			}
+		]
+	},
 	"breakpoints": {
 		"md": 640,
-		"lg": 990
+		"lg": 990,
+		"xl": 2200
 	},
-  "placeholder": "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	"placeholder": "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 }
+
+
+
+
+
+
+
+
+
