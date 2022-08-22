@@ -1,4 +1,6 @@
-import Swiper from 'swiper/js/swiper.min';
+// import Swiper from 'swiper/js/swiper.min';
+import Swiper from 'swiper/swiper-bundle';
+
 
 export default class Slider {
 	constructor(props) {

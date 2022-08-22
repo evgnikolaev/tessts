@@ -2,6 +2,7 @@
 
 {% block content %}
 
+    {#   todo  1) посмотреть плагины в package.json 2) меню 3) слайдеры блоки #}
     {% view '&main-hero' with {
         hero: hero
     } %}
@@ -18,4 +19,9 @@
         } %}
     </div>
 
+    <div class="mb-md-112 mb-64">
+        {% view '&request-block' with {
+            block: requestBlock
+        } %}
+    </div>
 {% endblock %}

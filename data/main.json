@@ -166,5 +166,38 @@
         "theme": "blue"
       }
     ]
+  },
+  "requestBlock": {
+    "heading": "Оставить заявку",
+    "text": "Не нашли нужную программу? Оставьте заявку и мы разработаем специально для вас уникальную программу под ваши задачи!",
+    "action": {
+      "href": "javascript:void(0);",
+      "text": "Оставить заявку",
+      "title": "Оставить заявку",
+      "theme": "light",
+      "mobTheme": "light-blue",
+      "mobFit": true
+    },
+    "image": {
+      "src": "tmp/request-block/request-background-desc-1.png",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/request-block/request-background-tab-1.png"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/request-block/request-background-mob-1.png"
+          }
+        ]
+      }
+    }
   }
 }
