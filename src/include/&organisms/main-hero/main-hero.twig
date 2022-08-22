@@ -1,0 +1,41 @@
+<div class="main-hero">
+    {% if hero.slides|length > 1 %}
+        <div class="main-hero__slider" data-slider-main-hero>
+            <div class="swiper-container" data-slider>
+                <div class="swiper-wrapper">
+                    {% for slide in hero.slides %}
+                        <div class="main-hero__slide swiper-slide">
+                            <div class="container">
+                                {% if slide.image %}
+                                    <div class="main-hero__image">
+                                        {% view '@image-adaptive' with {
+                                            image_adaptive: slide.image
+                                        } %}
+                                    </div>
+                                {% endif %}
+                                <div class="main-hero__info">
+                                    {% if slide.caption %}
+                                        <p class="main-hero__caption text-default">{{ slide.caption }}</p>
+                                    {% endif %}
+                                    {% if slide.heading %}
+                                        <p class="main-hero__heading h1 color-blue">{{ slide.heading }}</p>
+                                    {% endif %}
+                                    {% if slide.action %}
+                                        <div class="main-hero__action">
+                                            {% view '@button' with {
+                                                button: slide.action
+                                            } %}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="main-hero__pagination container">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>

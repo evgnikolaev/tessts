@@ -2,6 +2,10 @@
 
 {% block content %}
 
+    {% view '&main-hero' with {
+        hero: hero
+    } %}
+
     <div class="mb-md-112 mb-64">
         {% view "&slider-card" with {
             slider:sliderCard

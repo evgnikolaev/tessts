@@ -1,0 +1,112 @@
+.main-hero {
+  &__slide {
+    position: relative;
+    height: rem(640);
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      height: rem(800);
+    }
+  }
+
+  &__image {
+    position: absolute;
+
+    width: rem(436);
+    height: rem(394);
+    right: rem(-120);
+    bottom: 0;
+    @include media-breakpoint-up(lg) {
+      top: rem(76);
+      right: rem(-16);
+      width: rem(982);
+      height: rem(724);
+    }
+    @include media-breakpoint-only(md) {
+      right: rem(-204);
+      bottom: rem(-66);
+      width: rem(760);
+      height: rem(620);
+    }
+
+    .image {
+      user-select: none;
+    }
+  }
+
+  &__info {
+    padding-top: rem(112);
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: rem(220);
+    }
+    @include media-breakpoint-up(md) {
+      padding-bottom: rem(64);
+    }
+    @include media-breakpoint-only(md) {
+      padding-top: rem(168);
+    }
+  }
+
+  &__caption {
+    width: rem(184);
+    margin-bottom: rem(24);
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &__heading {
+    @include media-breakpoint-up(md) {
+      width: rem(408);
+      margin-bottom: rem(64);
+    }
+  }
+
+  &__action {
+    @include media-breakpoint-up(md) {
+      .button__icon {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      left: rem(16);
+      bottom: 0;
+      width: calc(100% - #{rem(32)});
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-blue;
+        color: $color-white;
+        height: rem(64);
+        line-height: rem(60);
+      }
+
+      .button__icon {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+
+    @include media-breakpoint-up(md) {
+      bottom: rem(54);
+    }
+    @include media-breakpoint-down(sm) {
+      top: rem(298);
+    }
+  }
+}

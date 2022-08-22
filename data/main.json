@@ -1,5 +1,114 @@
 {
   "title": "Главная",
+  "hero": {
+    "slides": [
+      {
+        "image": {
+          "src": "tmp/main-hero/main-hero-image-desc-1.png",
+          "alt": "image alt",
+          "fill": true,
+          "swiper_lazy": true,
+          "tab": {
+            "srcset": [
+              {
+                "scale": "1",
+                "src": "tmp/main-hero/main-hero-image-tab-1.png"
+              }
+            ]
+          },
+          "mob": {
+            "srcset": [
+              {
+                "scale": "1",
+                "src": "tmp/main-hero/main-hero-image-mob-1.png"
+              }
+            ]
+          }
+        },
+        "caption": "Официальная церемония",
+        "heading": "Идеи становятся реальностью",
+        "action": {
+          "href": "javascript:void(0);",
+          "text": "Подробнее",
+          "title": "Подробнее",
+          "mobFit": true,
+          "icon": {
+            "name": "24/arrow-right"
+          }
+        }
+      },
+      {
+        "image": {
+          "src": "tmp/main-hero/main-hero-image-desc-1.png",
+          "alt": "image alt",
+          "fill": true,
+          "swiper_lazy": true,
+          "tab": {
+            "srcset": [
+              {
+                "scale": "1",
+                "src": "tmp/main-hero/main-hero-image-tab-1.png"
+              }
+            ]
+          },
+          "mob": {
+            "srcset": [
+              {
+                "scale": "1",
+                "src": "tmp/main-hero/main-hero-image-mob-1.png"
+              }
+            ]
+          }
+        },
+        "caption": "Официальная церемония",
+        "heading": "Идеи становятся реальностью 2",
+        "action": {
+          "href": "javascript:void(0);",
+          "text": "Подробнее",
+          "title": "Подробнее",
+          "mobFit": true,
+          "icon": {
+            "name": "24/arrow-right"
+          }
+        }
+      },
+      {
+        "image": {
+          "src": "tmp/main-hero/main-hero-image-desc-1.png",
+          "alt": "image alt",
+          "fill": true,
+          "swiper_lazy": true,
+          "tab": {
+            "srcset": [
+              {
+                "scale": "1",
+                "src": "tmp/main-hero/main-hero-image-tab-1.png"
+              }
+            ]
+          },
+          "mob": {
+            "srcset": [
+              {
+                "scale": "1",
+                "src": "tmp/main-hero/main-hero-image-mob-1.png"
+              }
+            ]
+          }
+        },
+        "caption": "Официальная церемония",
+        "heading": "Идеи становятся реальностью 3",
+        "action": {
+          "href": "javascript:void(0);",
+          "text": "Подробнее",
+          "title": "Подробнее",
+          "mobFit": true,
+          "icon": {
+            "name": "24/arrow-right"
+          }
+        }
+      }
+    ]
+  },
   "sliderCard": {
     "slides": [
       {
