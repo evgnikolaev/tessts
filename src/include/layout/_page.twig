@@ -22,11 +22,11 @@
 </head>
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %}>
 
-{% view "&header" %}
+{#{% view "&header" %}#}
 
 {% block content %}{% endblock %}
 
-{% view '&footer' %}
+{#{% view '&footer' %}#}
 
 {% if block('endPage') is defined %}
     {{ block('endPage') }}
