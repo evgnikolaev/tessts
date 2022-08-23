@@ -1,0 +1,115 @@
+.subscribe {
+	position: relative;
+	display: block;
+	color: $color-white;
+
+	@include media-breakpoint-up(lg) {
+		@include background-pane($color-blue);
+	}
+	@include media-breakpoint-down(md) {
+		background-color: $color-blue;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__inner {
+		padding: rem(64) 0;
+
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			padding: rem(88) 8.3333%;
+		}
+		@include media-breakpoint-only(md) {
+			padding: rem(80) 0;
+		}
+	}
+
+	&__heading {
+		@include media-breakpoint-up(lg) {
+			padding-right: rem(40);
+			width: 30%;
+		}
+		@include media-breakpoint-down(md) {
+			margin-bottom: rem(24);
+		}
+		@include media-breakpoint-only(md) {
+			width: rem(456);
+		}
+		@include media-breakpoint-down(sm) {
+			padding-right: rem(40);
+		}
+	}
+
+	&__text {
+		margin-bottom: rem(32);
+		width: rem(268);
+
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(40);
+			width: rem(336);
+		}
+	}
+
+	&__form {
+		@include media-breakpoint-up(lg) {
+			width: rem(532);
+		}
+		@include media-breakpoint-only(md) {
+			width: rem(456);
+		}
+	}
+
+	&__field {
+		margin-bottom: rem(24);
+
+		@include media-breakpoint-up(md) {
+			display: flex;
+			align-items: center;
+		}
+
+		.field {
+			width: 100%;
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: rem(16);
+			}
+		}
+
+		.button {
+			flex-shrink: 0;
+
+			@include media-breakpoint-up(lg) {
+				min-width: rem(180);
+			}
+		}
+
+		.parsley-errors-list {
+			@include media-breakpoint-down(sm) {
+				display: none; // TODO временно
+			}
+		}
+	}
+
+	&__checkbox {
+		width: rem(280);
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: rem(190);
+		height: 100%;
+		pointer-events: none;
+
+		@include media-breakpoint-up(lg) {
+			width: rem(458);
+		}
+		@include media-breakpoint-only(md) {
+			width: rem(416);
+		}
+	}
+}

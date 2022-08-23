@@ -273,5 +273,54 @@
         ]
       }
     }
+  },
+  "subscribe": {
+    "heading": "Подписаться на&nbsp;рассылку",
+    "text": "Узнавайте первым о новых мероприятиях и программах. Только полезная информация и никакого спама",
+    "form": {
+      "id": "subscribe-form-id",
+      "method": "POST",
+      "action": "/",
+      "name": "subscribe-form",
+      "attr": "data-subscribe-form",
+      "field": {
+        "input": true,
+        "id": "subscribe-input-form-1",
+        "name": "subscribe-input-form-1",
+        "type": "email",
+        "placeholder": "Ваш e-mail",
+        "required": true,
+        "theme": "light"
+      },
+      "checkbox": {
+        "checkbox": true,
+        "id": "subscribe-checkbox-form-1",
+        "name": "subscribe-checkbox-form-1",
+        "text": "Согласен на обработку персональных данных",
+        "required": true,
+        "theme": "light"
+      },
+      "button": {
+        "type": "submit",
+        "text": "Подписаться",
+        "title": "Подписаться",
+        "theme": "light",
+        "mobTheme": "light-blue",
+        "mobFit": true
+      }
+    },
+    "image": {
+      "src": "tmp/subscribe/subscribe-image-desk.png",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/subscribe/subscribe-image-tab.png"
+          }
+        ]
+      }
+    }
   }
 }
