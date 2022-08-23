@@ -1,0 +1,37 @@
+<div class="campus">
+	{% if campus.image %}
+		<div class="campus__image">
+			{% view '@image-adaptive' with {
+				image_adaptive: campus.image
+			} %}
+		</div>
+	{% endif %}
+	<div class="campus__content">
+		<div class="campus__info container">
+			{% if campus.heading %}
+				<div class="campus__heading h2">{{ campus.heading }}</div>
+			{% endif %}
+			{% if campus.text %}
+				<p class="campus__text text-default">{{ campus.text }}</p>
+			{% endif %}
+			{% if campus.factors %}
+				<div class="campus__factors">
+					{% for factor in campus.factors %}
+						<div class="campus__factor">
+							{% view '@factor' with {
+								factor: factor
+							} %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+			{% if campus.action %}
+				<div class="campus__action">
+					{% view '@button' with {
+						button: campus.action
+					} %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

@@ -167,6 +167,38 @@
       }
     ]
   },
+  "promo": {
+    "image": {
+      "src": "tmp/promo-block/promo-block-desk.jpg",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/promo-block/promo-block-tab.jpg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/promo-block/promo-block-mob.jpg"
+          }
+        ]
+      }
+    },
+    "heading": "Образовательные решения",
+    "action": {
+      "href": "javascript:void(0);",
+      "title": "Подробнее",
+      "text": "Подробнее",
+      "mobTheme": "blue",
+      "mobFit": true
+    },
+    "text": "Синтез знаний лучших экспертов передового международного опыта. Наши решения являются ядром процесса управления знаниями Компании."
+  },
   "requestBlock": {
     "heading": "Оставить заявку",
     "text": "Не нашли нужную программу? Оставьте заявку и мы разработаем специально для вас уникальную программу под ваши задачи!",
@@ -195,6 +227,48 @@
           {
             "scale": "1",
             "src": "tmp/request-block/request-background-mob-1.png"
+          }
+        ]
+      }
+    }
+  },
+  "campus": {
+    "heading": "Заголовок",
+    "action": {
+      "href": "javascript:void(0);",
+      "text": "Подробнее",
+      "title": "Подробнее",
+      "mobFit": true
+    },
+    "factors": [
+      {
+        "number": "490",
+        "text": "мест вместимость концертного зала",
+        "theme": "blue"
+      },
+      {
+        "number": "30",
+        "text": "учебных<br>аудиторий",
+        "theme": "blue"
+      }
+    ],
+    "image": {
+      "src": "tmp/campus/campus-image-desc-1.jpg",
+      "alt": "image alt",
+      "fill": true,
+      "tab": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/campus/campus-image-tab-1.jpg"
+          }
+        ]
+      },
+      "mob": {
+        "srcset": [
+          {
+            "scale": "1",
+            "src": "tmp/campus/campus-image-mob-1.jpg"
           }
         ]
       }

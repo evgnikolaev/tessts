@@ -20,8 +20,21 @@
     </div>
 
     <div class="mb-md-112 mb-64">
+        {% view '&campus' with {
+            campus: promo
+        } %}
+    </div>
+
+    <div class="mb-lg-112 mb-md-128 mb-64">
         {% view '&request-block' with {
             block: requestBlock
         } %}
     </div>
+
+    <div class="mb-md-112 mb-64">
+        {% view '&campus' with {
+            campus: campus
+        } %}
+    </div>
+
 {% endblock %}
