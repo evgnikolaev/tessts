@@ -1,0 +1,140 @@
+.event-row {
+	$root: &;
+
+	display: block;
+	background-color: $color-white;
+	color: $color-black;
+
+	@include media-breakpoint-up(lg) {
+		@include defaultTransition(background-color, color);
+
+		&:hover {
+			background-color: $color-blue;
+			color: $color-white;
+		}
+	}
+
+	&__content {
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+		min-height: rem(156);
+		padding: rem(40) rem(28);
+
+		@include media-breakpoint-up(md) {
+			padding: rem(40) 8.3333%;
+		}
+		@include media-breakpoint-down(sm) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	&__date {
+		width: 10%;
+	}
+
+	&__day {
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(8);
+		}
+		@include media-breakpoint-down(sm) {
+			margin-right: rem(8);
+		}
+	}
+
+	&__caption {
+		margin-bottom: rem(8);
+		color: $color-grey;
+
+		@include media-breakpoint-up(lg) {
+			@include defaultTransition(color);
+
+			#{$root}:hover & {
+				color: $color-white;
+			}
+		}
+
+		#{$root}__item--time & {
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+
+	&__item {
+		@include media-breakpoint-up(md) {
+			width: 10%;
+		}
+
+		&:not(&--date):not(&--time):not(&--heading) {
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+
+		&--date {
+			@include media-breakpoint-only(md) {
+				width: 20%;
+			}
+			@include media-breakpoint-down(sm) {
+				order: -1;
+			}
+		}
+
+		&--duration {
+			display: flex;
+			justify-content: center;
+			width: 20%;
+		}
+
+		&--heading {
+			@include media-breakpoint-up(lg) {
+				width: 40%;
+				padding-right: rem(20);
+			}
+			@include media-breakpoint-only(md) {
+				width: 60%;
+			}
+			@include media-breakpoint-down(sm) {
+				order: 1;
+				width: 100%;
+				margin-top: rem(24);
+			}
+		}
+
+		&--time {
+			@include media-breakpoint-only(md) {
+				margin-left: auto;
+			}
+			@include media-breakpoint-down(sm) {
+				order: 0;
+			}
+		}
+	}
+
+	&__cell {
+		display: block;
+
+		#{$root}__item--date & {
+			@include media-breakpoint-down(sm) {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		right: rem(36);
+		width: rem(24);
+		height: rem(24);
+		transform: translateY(-50%);
+		pointer-events: none;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+}

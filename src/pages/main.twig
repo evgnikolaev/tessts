@@ -4,6 +4,45 @@
 
     {#   todo  1) посмотреть плагины в package.json , импользующиеся в меню и меню  #}
 
+    {% view '&main-hero' with {
+        hero: hero
+    } %}
+
+    <div class="mb-md-112 mb-64">
+        {% view "&slider-card" with {
+            slider:sliderCard
+        } %}
+    </div>
+
+    <div class="mb-md-112 mb-64">
+        {% view "&factors-block" with {
+            block:factorsBlock
+        } %}
+    </div>
+
+    <div class="mb-md-112 mb-64">
+        {% view '&campus' with {
+            campus: promo
+        } %}
+    </div>
+
+    <div class="mb-md-128 mb-64">
+        {% view '&request-block' with {
+            block: requestBlock
+        } %}
+    </div>
+
+    <div class="mb-md-112 mb-64">
+        {% view '&campus' with {
+            campus: campus
+        } %}
+    </div>
+
+    <div class="mb-md-112 mb-64">
+        {% view '&slider-container' with {
+            slider: sliderEvents
+        } %}
+    </div>
 
     <div class="mb-md-96 mb-40">
         {% view '&slider-container' with {
@@ -11,58 +50,10 @@
         } %}
     </div>
 
-
-
-{#    {% view '&main-hero' with {#}
-{#        hero: hero#}
-{#    } %}#}
-
-{#    <div class="mb-md-112 mb-64">#}
-{#        {% view "&slider-card" with {#}
-{#            slider:sliderCard#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-112 mb-64">#}
-{#        {% view "&factors-block" with {#}
-{#            block:factorsBlock#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-112 mb-64">#}
-{#        {% view '&campus' with {#}
-{#            campus: promo#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-128 mb-64">#}
-{#        {% view '&request-block' with {#}
-{#            block: requestBlock#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-112 mb-64">#}
-{#        {% view '&campus' with {#}
-{#            campus: campus#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-112 mb-64">#}
-{#        {% view '&slider-container' with {#}
-{#            slider: sliderEvents#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-96 mb-40">#}
-{#        {% view '&slider-container' with {#}
-{#            slider: sliderNews#}
-{#        } %}#}
-{#    </div>#}
-
-{#    <div class="mb-md-96 mb-40">#}
-{#        {% view '&subscribe' with {#}
-{#            subscribe: subscribe#}
-{#        } %}#}
-{#    </div>#}
+    <div class="mb-md-96 mb-40">
+        {% view '&subscribe' with {
+            subscribe: subscribe
+        } %}
+    </div>
 
 {% endblock %}

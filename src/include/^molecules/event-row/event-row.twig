@@ -1,0 +1,177 @@
+{% if card.href %}
+	<a href="{{ card.href }}"{% if card.id %} id="{{ card.id }}"{% endif %}
+	   class="event-row"{% if card.attr %} {{ card.attr }}{% endif %}>
+		<div class="container">
+			<div class="event-row__content">
+				{% if card.date %}
+					<div class="event-row__item event-row__item--date">
+						<div class="event-row__cell">
+							{% if card.date.day %}
+								<p class="text-default event-row__day">{{ card.date.day }}</p>
+							{% endif %}
+							{% if card.date.month %}
+								<p class="text-label">{{ card.date.month }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.heading %}
+					<div class="event-row__item event-row__item--heading">
+						<div class="event-row__cell">
+							{% if card.heading.caption %}
+								<p class="text-label event-row__day">{{ card.heading.caption }}</p>
+							{% endif %}
+							{% if card.heading.text %}
+								<p class="text-lead">{{ card.heading.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.time %}
+					<div class="event-row__item event-row__item--time">
+						<div class="event-row__cell">
+							{% if card.time.caption %}
+								<p class="text-label event-row__caption">{{ card.time.caption }}</p>
+							{% endif %}
+							{% if card.time.text %}
+								<p class="text-lead">{{ card.time.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.cost %}
+					<div class="event-row__item">
+						<div class="event-row__cell">
+							{% if card.cost.caption %}
+								<p class="text-label event-row__caption">{{ card.cost.caption }}</p>
+							{% endif %}
+							{% if card.cost.text %}
+								<p class="text-lead">{{ card.cost.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.duration %}
+					<div class="event-row__item event-row__item--duration">
+						<div class="event-row__cell">
+							{% if card.duration.caption %}
+								<p class="text-label event-row__caption">{{ card.duration.caption }}</p>
+							{% endif %}
+							{% if card.duration.text %}
+								<p class="text-lead">{{ card.duration.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.free %}
+					<div class="event-row__item">
+						<div class="event-row__cell">
+							{% if card.free.caption %}
+								<p class="text-label event-row__caption">{{ card.free.caption }}</p>
+							{% endif %}
+							{% if card.free.text %}
+								<p class="text-lead">{{ card.free.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				<div class="event-row__icon">
+					{% view '@icon' with {
+						icon: {
+							name: '24/arrow-right',
+							size: 'fit'
+						}
+					} %}
+				</div>
+			</div>
+		</div>
+	</a>
+{% else %}
+	<div{% if card.id %} id="{{ card.id }}"{% endif %}
+		class="event-row"{% if card.attr %} {{ card.attr }}{% endif %}>
+		<div class="container">
+			<div class="event-row__content">
+				{% if card.date %}
+					<div class="event-row__item event-row__item--date">
+						<div class="event-row__cell">
+							{% if card.date.day %}
+								<p class="text-default event-row__day">{{ card.date.day }}</p>
+							{% endif %}
+							{% if card.date.month %}
+								<p class="text-label">{{ card.date.month }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.heading %}
+					<div class="event-row__item event-row__item--heading">
+						<div class="event-row__cell">
+							{% if card.heading.caption %}
+								<p class="text-label event-row__day">{{ card.heading.caption }}</p>
+							{% endif %}
+							{% if card.heading.text %}
+								<p class="text-lead">{{ card.heading.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.time %}
+					<div class="event-row__item event-row__item--time">
+						<div class="event-row__cell">
+							{% if card.time.caption %}
+								<p class="text-label event-row__caption">{{ card.time.caption }}</p>
+							{% endif %}
+							{% if card.time.text %}
+								<p class="text-lead">{{ card.time.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.cost %}
+					<div class="event-row__item">
+						<div class="event-row__cell">
+							{% if card.cost.caption %}
+								<p class="text-label event-row__caption">{{ card.cost.caption }}</p>
+							{% endif %}
+							{% if card.cost.text %}
+								<p class="text-lead">{{ card.cost.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.duration %}
+					<div class="event-row__item event-row__item--duration">
+						<div class="event-row__cell">
+							{% if card.duration.caption %}
+								<p class="text-label event-row__caption">{{ card.duration.caption }}</p>
+							{% endif %}
+							{% if card.duration.text %}
+								<p class="text-lead">{{ card.duration.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				{% if card.free %}
+					<div class="event-row__item">
+						<div class="event-row__cell">
+							{% if card.free.caption %}
+								<p class="text-label event-row__caption">{{ card.free.caption }}</p>
+							{% endif %}
+							{% if card.free.text %}
+								<p class="text-lead">{{ card.free.text }}</p>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+				<div class="event-row__icon">
+					{% view '@icon' with {
+						icon: {
+							name: '24/arrow-right',
+							size: 'fit'
+						}
+					} %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}

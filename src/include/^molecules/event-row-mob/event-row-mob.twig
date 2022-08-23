@@ -1,0 +1,67 @@
+{% if card.href %}
+	<a href="{{ card.href }}"{% if card.id %} id="{{ card.id }}"{% endif %}
+	   class="event-row-mob"{% if card.attr %} {{ card.attr }}{% endif %}>
+		<div class="event-row-mob__content">
+			<div class="event-row-mob__top">
+				{% if card.date %}
+					<div class="event-row-mob__date">
+						{% if card.date.day %}
+							<p class="text-lead event-row-mob__day">{{ card.date.day }}</p>
+						{% endif %}
+						{% if card.date.month %}
+							<p class="text-label">{{ card.date.month }}</p>
+						{% endif %}
+					</div>
+				{% endif %}
+				{% if card.time.text %}
+					<div class="event-row-mob__time">
+						<p class="text-lead">{{ card.time.text }}</p>
+					</div>
+				{% endif %}
+			</div>
+			{% if card.heading %}
+				<div class="event-row-mob__heading">
+					{% if card.heading.caption %}
+						<p class="event-row-mob__caption text-label">{{ card.heading.caption }}</p>
+					{% endif %}
+					{% if card.heading.text %}
+						<p class="text-lead">{{ card.heading.text }}</p>
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+	</a>
+{% else %}
+	<div{% if card.id %} id="{{ card.id }}"{% endif %}
+		class="event-row-mob"{% if card.attr %} {{ card.attr }}{% endif %}>
+		<div class="event-row-mob__content">
+			<div class="event-row-mob__top">
+				{% if card.date %}
+					<div class="event-row-mob__date">
+						{% if card.date.day %}
+							<p class="text-lead event-row-mob__day">{{ card.date.day }}</p>
+						{% endif %}
+						{% if card.date.month %}
+							<p class="text-label">{{ card.date.month }}</p>
+						{% endif %}
+					</div>
+				{% endif %}
+				{% if card.time.text %}
+					<div class="event-row-mob__time">
+						<p class="text-lead">{{ card.time.text }}</p>
+					</div>
+				{% endif %}
+			</div>
+			{% if card.heading %}
+				<div class="event-row-mob__heading">
+					{% if card.heading.caption %}
+						<p class="event-row-mob__caption text-label">{{ card.heading.caption }}</p>
+					{% endif %}
+					{% if card.heading.text %}
+						<p class="text-lead">{{ card.heading.text }}</p>
+					{% endif %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endif %}

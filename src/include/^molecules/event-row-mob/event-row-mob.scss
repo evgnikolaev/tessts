@@ -1,0 +1,33 @@
+.event-row-mob {
+	display: block;
+
+	&__content {
+		padding: rem(40) rem(28);
+		background-color: $color-white;
+		min-height: rem(200);
+		height: 100%;
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+	}
+
+	&__date {
+		display: flex;
+		align-items: center;
+	}
+
+	&__day {
+		margin-right: rem(8);
+	}
+
+	&__caption {
+		margin-bottom: rem(8);
+	}
+}
